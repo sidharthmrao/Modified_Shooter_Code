@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "7407-DriveCode-2021-Python"
+version = "0.1.0"
+description = ""
+authors = ["Ethan Chapman <ethan.chapman0@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+robotpy-toolkit-7407 = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
