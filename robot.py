@@ -20,8 +20,8 @@ class _Robot(wpilib.TimedRobot):
 
         print("Robot initialized.")
 
-    def robotPeriodic(self): ...
-    # commands2.CommandScheduler.getInstance().run()
+    def robotPeriodic(self):
+        commands2.CommandScheduler.getInstance().run()
 
     def teleopInit(self) -> None:
         # commands2.CommandScheduler.getInstance().schedule(DriveSwerve(Robot.drivetrain))
