@@ -7,9 +7,9 @@ class ShooterIncrementUp(SubsystemCommand[Shooter]):
     def __init__(self, subsystem: Shooter, increase: bool) -> None:
         super().__init__(subsystem)
         if increase:
-            self.change = .0001
+            self.change = .001
         else:
-            self.change = -.0001
+            self.change = -.001
 
     def initialize(self) -> None:
         self.subsystem.alter_increment(self.change)

@@ -28,8 +28,8 @@ class _Robot(wpilib.TimedRobot):
         Robot.shooter.set_speed(.2)
 
     def teleopPeriodic(self) -> None:
-        Robot.shooter.controller_based(-self.oi.Shooter.LEFT_JOY(), -
-                                       self.oi.Shooter.RIGHT_JOY())
+        Robot.shooter.controller_based(-self.oi.Shooter.LEFT_JOY(),
+                                       -self.oi.Shooter.RIGHT_JOY())
 
     def autonomousInit(self) -> None: ...
 

@@ -10,10 +10,10 @@ class OI:
     def map_controls():  # TODO
         print("---Mapping controls...---")
 
-        Keymap.Shooter.LB.whenPressed(
+        Keymap.Shooter.RB.whenPressed(
             command.ShooterIncrementUp(Robot.shooter, True)
         )
-        Keymap.Shooter.RB.whenPressed(
+        Keymap.Shooter.LB.whenPressed(
             command.ShooterIncrementUp(Robot.shooter, False)
         )
 

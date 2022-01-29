@@ -26,7 +26,7 @@ class Shooter(SubsystemBase):
             return value
 
     def set_speed(self, speed: float):
-        #self.motor_L.set(ctre.ControlMode.PercentOutput, -speed)
+        self.motor_L.set(ctre.ControlMode.PercentOutput, -speed)
         self.motor_R.set(ctre.ControlMode.PercentOutput, speed)
         self.current_speed = speed
 
